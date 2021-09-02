@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Hello from './Hello';
+import Product from './Product';
 import './style.css';
 
-ReactDOM.render(<Hello name="world" />, document.getElementById('root'));
+ReactDOM.render(<Product name="Leo" />, document.getElementById('root'));
