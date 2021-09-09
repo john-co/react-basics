@@ -18,4 +18,20 @@ const Product = () => {
   )
 }
 
-export default Product;
+const Total = () => {
+  return(
+    <h3>Total Cash:</h3>
+  )
+}
+const ProductList = () => {
+  return (
+    <div>
+      <Product />
+      <Product />
+      <Product />
+      <Total />
+    </div>
+  )
+}
+
+export default ProductList;

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Product from './Product';
+import Main from './Product';
 import './style.css';
 
-ReactDOM.render(<Product name="Leo" />, document.getElementById('root'));
+ReactDOM.render(<Main name="Leo" />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
