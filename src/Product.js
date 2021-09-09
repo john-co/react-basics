@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Product = () => {
+const Product = ({ name, price}) => {
   // Declare a new state variable called "quantity"
   const [quantity, setQuantity] = useState(0);
 
@@ -11,9 +11,11 @@ const Product = () => {
 
   return (
     <>
-      <h3>This is a Product</h3>
+      <h3>{name}</h3>
+      <p>${price}</p>
       <button onClick={buy}>Buy</button>
       <h3>Quantity: {quantity}</h3>
+      <hr/>
     </>
   )
 }
@@ -26,9 +28,9 @@ const Total = () => {
 const ProductList = () => {
   return (
     <div>
-      <Product />
-      <Product />
-      <Product />
+      <Product name="Android" price={150}/>
+      <Product name="Apple" price={170}/>
+      <Product name="Nokia" price={65}/>
       <Total />
     </div>
   )
