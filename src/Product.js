@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Product = () => {
+  // Declare a new state variable called "quantity"
+  const [quantity, setQuantity] = useState(0);
 
   const buy = () => {
-    alert("You selected this product");
+    // alert("You selected this product");
+    setQuantity(quantity + 1);
   }
 
   return (
     <>
-      <h1 className="title">This is a Product</h1>
-      <button className="greenButton" onClick={buy}>Buy</button>
+      <h3>This is a Product</h3>
+      <button onClick={buy}>Buy</button>
+      <h3>Quantity: {quantity}</h3>
     </>
   )
 }
