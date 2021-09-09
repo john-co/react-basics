@@ -9,7 +9,7 @@ const Product = () => {
   return (
     <>
       <h1 className="title">This is a Product</h1>
-      <button onClick={buy}>Buy</button>
+      <button className="greenButton" onClick={buy}>Buy</button>
     </>
   )
 }
