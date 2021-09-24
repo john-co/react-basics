@@ -1,16 +1,10 @@
-# Basic React App in 1 hour
+# Jest Testing
 
-This project was created following Udemy course: React in 1 hour
+This project was created following https://www.valentinog.com/blog/jest/
 
 
 Key concepts learned are:
-- React leverages use of state to easily update multiple components in real time
-- syntax of function in react:
-```
-= () => {
-
-}
-```
-
-- transfer properties using functions
-- create an initial array
+- Basics of wrapping a jest test block
+- Running jest test with npm and package.json config
+- using coverage to see blind spots on what to exactly test in javascript functions
+- Created jest tests to test Throw errors
