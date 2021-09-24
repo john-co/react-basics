@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
-const Product = ({ name, price, onShowProduct, onCalculateTotal}) => {
+export const Product = ({ name, price}) => {
   // Declare a new state variable called "quantity"
   const [quantity, setQuantity] = useState(0);
 
   const buy = () => {
     // alert("You selected this product");
     setQuantity(quantity + 1);
-    onCalculateTotal(price);
   }
 
   return (
@@ -15,7 +14,6 @@ const Product = ({ name, price, onShowProduct, onCalculateTotal}) => {
       <h3>{name}</h3>
       <p>${price}</p>
       <button onClick={buy}>Buy</button>
-      <button onClick={() => onShowProduct(name)}>Show</button>
       <h3>Quantity: {quantity}</h3>
       <hr/>
     </>
@@ -75,9 +73,9 @@ const ProductList = () => {
     setTotal(total + parseInt(price));
   }
 
-  const showProduct = (name) => {
-    alert("You selected " + name);
-  }
+  // const showProduct = (name) => {
+  //   alert("You selected " + name);
+  // }
 
   const addProduct = (product) => {
     // [1,2,3]
